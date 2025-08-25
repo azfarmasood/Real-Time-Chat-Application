@@ -31,7 +31,7 @@ const Chat = () => {
   const [isTyping, setIsTyping] = useState<boolean>(false);
   const [connectionStatus, setConnectionStatus] = useState<'connecting' | 'connected' | 'disconnected'>('connecting');
 
-  const ENDPOINT = "http://localhost:8000";
+  const ENDPOINT = "https://react-real-time-chat-app-6eb8988692e4.herokuapp.com/";
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
